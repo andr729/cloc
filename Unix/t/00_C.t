@@ -395,6 +395,16 @@ my @Tests = (
                     'args' => '../tests/inputs/drools.drl',
                 },
                 {
+                    'name' => 'Duckling',
+                    'ref'  => '../tests/outputs/inventory.dk.yaml',
+                    'args' => '../tests/inputs/inventory.dk',
+                },
+                {
+                    'name' => 'Duckling Script',
+                    'ref'  => '../tests/outputs/restock.dks.yaml',
+                    'args' => '../tests/inputs/restock.dks',
+                },
+                {
                     'name' => 'ECPP',
                     'ref'  => '../tests/outputs/comp.ecpp.yaml',
                     'args' => '../tests/inputs/comp.ecpp',

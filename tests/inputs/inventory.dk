@@ -1,0 +1,35 @@
+#{
+	inventory.dk -- small Duckling sample for cloc.
+	Block comments start with '#{' and end with '#}'.
+#}
+
+import core.builtins.*;
+
+# A single stock entry.
+class Item {
+	name: str = "";
+	count: i64 = 0;  # units on hand
+}
+
+#{ one-line block comment #}
+
+fun total(items: [Item], n: i64) -> i64 = {
+	var sum = 0i64;
+	var i = 0i64;
+	while (i < n) {
+		sum = sum + items[i].count;
+		i = i + 1i64;
+	}
+	return sum;
+}
+
+fun main() -> i64 = {
+	var items = dvm_alloc_arr[Item](2i64);
+	items[0] = Item("bolt #8", 120i64);
+	items[1] = Item("nut #{M4#}", 80i64);
+	#{ items[2] = Item("washer", 40i64); #}
+
+	print(f"Total: {total(items, 2i64)}\n");
+	dvm_free_arr[Item](items);
+	return 0i64;  #{ trailing block comment #}
+}
