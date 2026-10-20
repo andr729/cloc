@@ -1,0 +1,21 @@
+---
+# github.com/AlDanial/cloc
+header : 
+  cloc_url           : github.com/AlDanial/cloc
+  cloc_version       : 2.11
+  elapsed_seconds    : 0.00742101669311523
+  n_files            : 1
+  n_lines            : 21
+  files_per_second   : 134.75242562488
+  lines_per_second   : 2829.80093812247
+  report_file        : ../tests/outputs/restock.dks.yaml
+'Duckling Script' :
+  nFiles: 1
+  blank: 4
+  comment: 6
+  code: 11
+SUM: 
+  blank: 4
+  comment: 6
+  code: 11
+  nFiles: 1

@@ -1,0 +1,21 @@
+#{
+	restock.dks -- small Duckling Script sample for cloc.
+	Scripts run top-level statements directly.
+#}
+
+var stock: i64 = 3;
+var target: i64 = 10;  # desired level
+
+# Add one unit at a time until the target is reached.
+fun restock() = {
+	while (stock < target) {
+		stock = stock + 1;
+	}
+}
+
+#{ restock(); #}
+if (stock < target) {
+	restock();
+}
+
+print(f"Stock: {stock}\n");  #{ trailing #}

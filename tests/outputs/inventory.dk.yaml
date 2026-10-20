@@ -1,0 +1,21 @@
+---
+# github.com/AlDanial/cloc
+header : 
+  cloc_url           : github.com/AlDanial/cloc
+  cloc_version       : 2.11
+  elapsed_seconds    : 0.00812292098999023
+  n_files            : 1
+  n_lines            : 35
+  files_per_second   : 123.108423833284
+  lines_per_second   : 4308.79483416495
+  report_file        : ../tests/outputs/inventory.dk.yaml
+'Duckling' :
+  nFiles: 1
+  blank: 6
+  comment: 7
+  code: 22
+SUM: 
+  blank: 6
+  comment: 7
+  code: 22
+  nFiles: 1
